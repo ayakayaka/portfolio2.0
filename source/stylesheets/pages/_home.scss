@@ -1,1 +1,44 @@
 // Specific CSS for your home-page
+
+body {
+  background-color: $gray;
+}
+
+#about {
+  h2 {
+    font-family: $lobster;
+    font-size: 60px;
+    color: $blue;
+  }
+}
+
+#project-title {
+    font-size: 60px;
+    font-family: $lobster;
+    color: $blue;
+}
+
+#project-name {
+  font-size: 20px;
+}
+
+.card-product {
+  width: 550px;
+  height: 150px;
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card-product {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card-product img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
