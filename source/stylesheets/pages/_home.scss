@@ -22,86 +22,80 @@ body {
   font-size: 20px;
 }
 
-.card-product {
-  width: 550px;
-  height: 150px;
-}
-
-
 // smallest device
 @media (min-width: 100px) and (max-width: 575px) {
-  #banner-container {
-    img.avatar-large {
-      margin-left: 150px;
-    }
-    .title-main {
-      white-space: nowrap;
-      text-align: center;
-    }
-  }
     .cards {
       grid-template-columns: 1fr;
     }
-
     .card-product {
       flex-direction: column;
       height: auto;
+      width: 100%;
     }
 
     .card-product img {
-      height: 200px;
+      height: auto;
       width: 100%;
       object-fit: cover;
     }
 
-   #about p {
-    width: 500px;
+   #contact {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
    }
 
-   #contact {
-    margin-left: 180px;
+   .avatar-large {
+    object-position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
    }
 }
 
-
-// Small devices (landscape phones, 576px and up)
-// @media (min-width: 576px) {
-//   .cards {
-//     grid-template-columns: 1fr;
-//   }
-// }
-
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  #banner-container {
-    img.avatar-large {
-      margin-left: 400px;
-    }
-    .title-main {
-      white-space: nowrap;
-      margin-left: 300px;
-    }
+  .avatar-large {
+    object-position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title-main {
+    text-align: center;
   }
   .cards {
     grid-template-columns: 1fr 1fr;
   }
 
   .card-product {
-    // flex-direction: column;
-    height: auto;
-    margin-left: 0;
+      flex-direction: column;
+      height: auto;
+      width: 100%;
   }
-   #about {
-    p {
-      width: 1000px;
-    }
-   }
+
+  .card-product img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-product {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .card-product img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
